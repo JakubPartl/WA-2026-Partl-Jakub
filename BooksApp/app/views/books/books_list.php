@@ -55,12 +55,18 @@
                         <tbody class="divide-y divide-slate-700">
                             <?php foreach ($books as $book): ?>
                                 <tr class="hover:bg-slate-700/30 transition-colors group">
-                                    <td class="px-6 py-4 text-center text-slate-500 text-sm italic"><?= htmlspecialchars($book['id']) ?></td>
-                                    <td class="px-6 py-4 font-medium text-white group-hover:text-blue-400"><?= htmlspecialchars($book['title']) ?></td>
-                                    <td class="px-6 py-4 text-slate-300"><?= htmlspecialchars($book['author']) ?></td>
-                                    <td class="px-6 py-4 text-slate-400 font-mono"><?= htmlspecialchars($book['year']) ?></td>
-                                    <td class="px-6 py-4 text-right font-bold text-slate-200"><?= htmlspecialchars($book['price']) ?> Kč</td>
-                                    <td class="px-6 py-4 text-center">
+                                    <<td class="px-6 py-4 text-center">
+                                        <div class="flex justify-center space-x-3 text-sm">
+                                            
+                                            <a href="<?= BASE_URL ?>/index.php?url=book/show/<?= $book['id'] ?>" class="text-blue-400 hover:text-white transition-colors underline decoration-blue-800 underline-offset-4">Detail</a>
+                                            
+                                            <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] === $book['created_by']): ?>
+                                                <a href="<?= BASE_URL ?>/index.php?url=book/edit/<?= $book['id'] ?>" class="text-emerald-400 hover:text-white transition-colors underline decoration-emerald-800 underline-offset-4">Upravit</a>
+                                                <a href="<?= BASE_URL ?>/index.php?url=book/delete/<?= $book['id'] ?>" onclick="return confirm('Opravdu chcete tuto knihu smazat?')" class="text-rose-400 hover:text-white transition-colors underline decoration-rose-800 underline-offset-4">Smazat</a>
+                                            <?php endif; ?>
+                                            
+                                        </div>
+                                    </td>
                                         <div class="flex justify-center space-x-3 text-sm">
                                             <a href="<?= BASE_URL ?>/index.php?url=book/show/<?= $book['id'] ?>" class="text-blue-400 hover:text-white transition-colors underline decoration-blue-800 underline-offset-4">Detail</a>
                                             <a href="<?= BASE_URL ?>/index.php?url=book/edit/<?= $book['id'] ?>" class="text-emerald-400 hover:text-white transition-colors underline decoration-emerald-800 underline-offset-4">Upravit</a>
