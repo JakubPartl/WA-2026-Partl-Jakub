@@ -1,0 +1,24 @@
+<svg width="600" height="180" viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2563EB"></stop>
+            <stop offset="100%" stop-color="#1E40AF"></stop>
+        </linearGradient>
+    </defs>
+
+    <!-- Ikona knihy -->
+    <g transform="translate(30,35)">
+        <path d="M0 20 C0 8 8 0 20 0 L60 0 C72 0 80 8 80 20 L80 90 C80 78 72 70 60 70 L20 70 C8 70 0 78 0 90 Z" fill="url(#blueGradient)"></path>
+        <path d="M90 20 C90 8 98 0 110 0 L150 0 C162 0 170 8 170 20 L170 90 C170 78 162 70 150 70 L110 70 C98 70 90 78 90 90 Z" fill="url(#blueGradient)"></path>
+        <rect x="82" y="0" width="6" height="90" fill="#1E3A8A"></rect>
+    </g>
+
+    <!-- Text -->
+    <text x="240" y="80" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#1E40AF">
+        Aplikace
+    </text>
+
+    <text x="240" y="125" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="300" fill="#2563EB">
+        Knihovna
+    </text>
+</svg>

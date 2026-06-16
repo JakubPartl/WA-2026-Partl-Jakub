@@ -52,6 +52,11 @@ class AuthController {
                 header('Location: ' . BASE_URL . '/index.php?url=auth/register');
                 exit;
             }
+            if (strlen($password) < 8 || !preg_match('/[0-9]/', $password)) {
+                $_SESSION['flash_error'] = 'Heslo musí mít alespoň 8 znaků a obsahovat alespoň 1 číslo.';
+                header('Location: ' . BASE_URL . '/auth/register');
+                exit;
+            }
         }
     }
 
@@ -82,6 +87,9 @@ class AuthController {
                 // ÚSPĚCH: Uložíme si důležitá data do Session
                 $_SESSION['user_id'] = $user['id'];
                 
+                // ZMĚNA: Uložíme do Session i informaci o tom, zda je uživatel admin
+                $_SESSION['is_admin'] = $user['is_admin']; 
+
                 // Uložíme si jméno pro uvítání (přezdívku, nebo uživatelské jméno)
                 $_SESSION['user_name'] = !empty($user['nickname']) ? $user['nickname'] : $user['username'];
 
