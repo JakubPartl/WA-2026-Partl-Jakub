@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="230" viewBox="0 0 680 520">
+  <title>Porsche Katalog logo</title>
+  <defs>
+    <clipPath id="shield-clip">
+      <path d="M340,60 L480,80 L490,260 Q490,360 340,440 Q190,360 190,260 L200,80 Z"/>
+    </clipPath>
+  </defs>
+  <path d="M340,55 L485,76 L495,258 Q495,368 340,450 Q185,368 185,258 L195,76 Z" fill="#1a0a2e" stroke="#7c3aed" stroke-width="3"/>
+  <path d="M340,55 L485,76 L485,200 L340,200 L195,200 L195,76 Z" fill="#2d1254" clip-path="url(#shield-clip)"/>
+  <path d="M340,200 L485,200 L495,258 Q495,368 340,450 Q185,368 185,258 L195,200 Z" fill="#1a0a2e" clip-path="url(#shield-clip)"/>
+  <line x1="340" y1="55" x2="340" y2="450" stroke="#7c3aed" stroke-width="1.5" opacity="0.6"/>
+  <line x1="195" y1="200" x2="485" y2="200" stroke="#7c3aed" stroke-width="1.5" opacity="0.6"/>
+  <g fill="#a855f7" opacity="0.9">
+    <path d="M210,175 L210,185 L230,185 L235,178 L260,172 L290,168 L320,167 L335,167 L335,175 Z"/>
+    <path d="M245,167 L255,155 L275,149 L300,148 L320,150 L330,158 L335,167 L290,168 L260,172 Z"/>
+    <circle cx="232" cy="185" r="10" fill="#1a0a2e" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="232" cy="185" r="5" fill="#a855f7"/>
+    <circle cx="315" cy="185" r="10" fill="#1a0a2e" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="315" cy="185" r="5" fill="#a855f7"/>
+    <path d="M258,155 L265,152 L290,151 L310,153 L320,158 L315,165 L295,166 L265,168 L255,165 Z" fill="#2d1254" opacity="0.8"/>
+    <rect x="218" y="183" width="107" height="4" rx="2"/>
+    <path d="M210,175 L207,178 L207,184 L215,184 L215,175 Z" fill="#7c3aed"/>
+  </g>
+  <g fill="#7c3aed" opacity="0.7" transform="scale(-1,1) translate(-680,0)">
+    <path d="M210,175 L210,185 L230,185 L235,178 L260,172 L290,168 L320,167 L335,167 L335,175 Z"/>
+    <path d="M245,167 L255,155 L275,149 L300,148 L320,150 L330,158 L335,167 L290,168 L260,172 Z"/>
+    <circle cx="232" cy="185" r="10" fill="#1a0a2e" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="232" cy="185" r="5" fill="#7c3aed"/>
+    <circle cx="315" cy="185" r="10" fill="#1a0a2e" stroke="#7c3aed" stroke-width="2"/>
+    <circle cx="315" cy="185" r="5" fill="#7c3aed"/>
+    <path d="M258,155 L265,152 L290,151 L310,153 L320,158 L315,165 L295,166 L265,168 L255,165 Z" fill="#1a0a2e" opacity="0.8"/>
+    <rect x="218" y="183" width="107" height="4" rx="2"/>
+    <path d="M210,175 L207,178 L207,184 L215,184 L215,175 Z" fill="#6d28d9"/>
+  </g>
+  <path d="M195,76 L225,76 L225,100 L195,96 Z" fill="#7c3aed" opacity="0.4"/>
+  <path d="M485,76 L455,76 L455,100 L485,96 Z" fill="#7c3aed" opacity="0.4"/>
+  <text x="340" y="248" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="bold" letter-spacing="8" fill="#e9d5ff">PORSCHE</text>
+  <line x1="230" y1="258" x2="450" y2="258" stroke="#7c3aed" stroke-width="1" opacity="0.8"/>
+  <text x="340" y="290" text-anchor="middle" font-family="Georgia, serif" font-size="14" letter-spacing="10" fill="#a855f7">KATALOG</text>
+  <text x="260" y="340" text-anchor="middle" font-size="12" fill="#7c3aed" opacity="0.6">✦</text>
+  <text x="340" y="355" text-anchor="middle" font-size="16" fill="#a855f7" opacity="0.8">✦</text>
+  <text x="420" y="340" text-anchor="middle" font-size="12" fill="#7c3aed" opacity="0.6">✦</text>
+  <text x="340" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="11" letter-spacing="4" fill="#6d28d9">EST. 2026</text>
+  <path d="M340,55 L485,76 L495,258 Q495,368 340,450 Q185,368 185,258 L195,76 Z" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3"/>
+</svg>
